@@ -1,0 +1,10 @@
+﻿using MyMethods;
+string[] array1 = { "Hello", "2", "world", ":-)" };
+string[] array2 = { "1234", "1567", "-2", "computer science" };
+string[] array3 = { "Russia", "Denmark", "Kazan" };
+StringArrays.PrintResult(array1);
+StringArrays.PrintResult(array2);
+StringArrays.PrintResult(array3);
+Console.WriteLine("Введите с клавиатуры через запятую любые наборы символов.");
+string[] usersArray = Console.ReadLine()!.Split(',', StringSplitOptions.RemoveEmptyEntries).ToArray();
+StringArrays.PrintResult(usersArray);
